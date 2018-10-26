@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+    <h1>AJAX- Hard Challenge</h1>
+    <!-- <div id="container">
+            <div id="result"></div>
+            <ul id="time"></ul>
+    </div> -->
+
+    <form action="#" method="get" id="form">
+        <!-- Longitude -->
+        <div class="location">
+            <div>
+                <label for="longitude">Longitude:</label>
+                <input type="text" id="longitude" name="longitude" type="longitude" required>
+            </div>
+            <!-- Latitude -->
+            <div>
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" name="latitude" type="latitude" required>
+            </div>
+        </div>
+        <!-- submit button -->
+        <div class="submit">
+            <input id="submit" class="submit" type="submit" value="Submit">
+        </div>
+        <div id="display"></div>
+    </form>
+    <button id="geolocation">Use Geolocation</button>
+    <div id="showlocation"></div>
+    <script src="space.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!--HARD: Recreate the pie chart in the picture provided.-->
+<!DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pie.css">
+<style>
+body {
+    position: relative;
+}
+div.circle {
+    background-color: black;
+    width: 400px;
+    border-radius: 50%;
+    height: 400px;
+}
+p.red, p.blue, p.yellow, p.green{
+    font-size: 16px;
+    color: grey;
+    position: absolute;
+}
+p.red {
+    top:25%;
+    left:7%;
+}
+p.yellow {
+    top:25%;
+    left:18%;
+}
+p.blue {
+    top:55%;
+    left:7%;
+}
+p.green {
+    top:55%;
+    left:18%;
+}
+.line1{
+    height: 94.3%;
+    width: 3px;
+    background: linear-gradient(to top, grey, white, grey);
+    position: absolute;
+    left: 195;
+}
+.line2{
+    height: 3px;
+    width: 28%;
+    background: linear-gradient(to right, grey, white, grey);
+    position: absolute;
+    top: 50%;
+}  
+</style>
+</head>
+<body>
+        <div class="line1"></div>
+<div class="circle">
+        <p class="red">Red</p>
+        <p class="yellow">Yellow</p>
+        <p class="blue">Blue</p>
+        <p class="green">Green</p>
+</div>
+<div class="line2"></div>
+</body>
+</html>

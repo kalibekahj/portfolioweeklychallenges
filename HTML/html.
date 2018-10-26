@@ -1,0 +1,258 @@
+VERY EASY: Create a bulleted list of the colors of the rainbow
+
+<ul>
+	<li>Red</li>
+	<li>Orange</li>
+	<li>Yellow</li>
+	<li>Green</li>
+	<li>Blue</li>
+	<li>Indigo</li>
+	<li>Violet</li>
+</ul>
+
+EASY: Create an HTML page with a main headline, two subheads in their own sections and supporting text for each subhead. Topic is up to you. Make sure you have a page title.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Why I Love Summer</title>
+  </head>
+<body>
+<section>
+
+<h1>The Beach</h1>
+  <h2>The Sun</h2>
+    <p>You can get a suntan!</p>
+  <h2>Swimming</h2>
+    <p>The water cools you off.</p>
+</section>
+
+</body>
+</html>
+
+
+MEDIUM: Recreate the website outline given using semantic HTML. The topic can be of your choosing.
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <title>Why I Love Summer</title>
+   </head>
+<body> 
+<article>
+
+  <h1>The Beach</h1>
+   <h2>The Sun</h2>
+    <p>You can get a suntan!</p>
+   <h2>Swimming</h2>
+    <p>The water cools you off.</p>
+
+</article>
+
+</body>
+</html>
+
+
+HARD: Create an HTML form with a GET method that will collect the following: First Name, Last Name, Gender (have them pick), Favorite sport (from a dropdown list of at least 5), Checkboxes for what you like on your pizza (from a list of at least 5) and
+the submit button should read, "Save".
+
+ <form action="/action_page.php" method="get">
+    <!-- First Name -->
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" type="firstName" required>
+    </div>
+   
+  <br>
+  
+    <!-- Last Name -->
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" type="lastName" required>      
+    </div>
+  
+  <br>
+  
+    <!-- radio input for Gender -->
+    <div>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="genderChoice1" name="gender" value="male">
+      <label for="genderChoice1">Male</label>
+
+      <input type="radio" id="genderChoice2" name="gender" value="female">
+      <label for="genderChoice2">Female</label>
+
+      <input type="radio" id="genderChoice3" name="gender" value="other">
+      <label for="genderChoice3">Other</label>
+
+      <br><br>
+      
+     </div>
+<select name="Sports">
+    <option value="basketball">Basketball</option>
+    <option value="football">Football</option>
+    <option value="soccer">Soccer</option>
+    <option value="volleyball">Volleyball</option>
+    <option value="tennis">Tennis</option>
+  </select>
+  <br><br>
+     </div>
+
+    <div class="checkbox">Favorite Pizza Topping(s)</div>
+    <div> 
+   <br>
+      <label><input type="checkbox" value="">Extra Cheese</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Chicken</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Pepperoni</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Sausages</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Pineapples</label>
+    </div>
+  
+   <br>
+
+    <!-- submit button -->
+    <div>
+      <input class="submit" type="submit" value="Save">
+    </div>
+
+</form>
+             
+
+
+VERY HARD: Create a horizontal navigation of 5 items, one of the items should have a dropdown menu when you hover over it.
+
+
+
+<html>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Support 
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Feedback</a>
+    </div>
+  </div> 
+</div>
+
+</body>
+</html>
+
+
+
+VERY HARD: Given a comma separated string of full names, use JavaScript to create an alphabetical-by-Last-Name, ordered list and have it display in HTML. Make the last names bold and red using CSS (NOT inline styles).
+## Note: Don't freak out about the last one
+
+
+"Kalijah Jones, Marcio Smith, John Doe, Polly Pocket"
+
+Var list="Kalijah Jones, Marcio Smith, John Doe, Polly Pocket" 
+
+<script>
+ var scriptName= "Kalijah Jones","Marcio Smith","John Doe","Polly Pocket";
+ var listOfNames= stringName.split(","); //["Kalijah Jones,"Marcio Smith","John Doe","Polly Pocket"]
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IT=edge">
+    <title>html:Very Hard 2 Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text-css" media="screen" href="styles.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="nameHolder"></div>
+    <script>
+        // this comma separated string
+        var stringOfName = "Kalijah Jones","Marcio Smith","John Doe","Polly Pocket";
+        var listOfFullNames = stringOfName.split(","); // ["Kalijah Jones","Marcio Smith","John Doe","Polly Pocket"]
+        var listOfReversedFullNames = [];
+        var listOfAlphabeticalFullNames = [];
+
+        for(var i = 0; i < listOfFullNames.length; i++){
+            // console.log(i);
+            // console.log(listOfFullNames[i]);
+        var fullName = listOfFullNames[i].split(" ");
+            // "Kalijah" ["K"."A","L","I"]
+            // "Kalijah"
+        var firstName= fullName[0];
+            // "Jones"
+        var lastName = fullName[1];
+        var newName= lastName + " " + firstName;
+        listOfReversedFullNames.push(newName);
+    }
+
+        console.log('I am here', listOfReversedFullNames);
+        console.log('alphabeticalize', listOfReversedFullNames.sort());
+        listOfReversedFullNames = listOfFullNames.sort();
+
+        for(var i = 0; i < listOfReversedFullNames.length; i++){
+            // console.log(i);
+            // console.log(listofFullNames[i]);
+        var fullName = listOfReversedFullNames[i].split(" ");
+            // declare new .split names array
+            // "Kalijah" ["K","A","L","I"]
+            // "Kalijah"
+        var firstName = fullName[0];
+            // "Jones"
+        var lastName = fullName[1];
+        var nameName = lastName + " " + firstName;
+        listOfAlphabeticalFullNames.push(newName);
+    }
+
+        var name = "name";
+        console.log(listOfAlphabeticalFullNames);
+        var html = "<ol>";
+        for(var i = 0; i < listOfAlphabeticalFullNames.length; i++){
+            // console.log(i);
+            // console.log(listofFullNames[i]);
+        var fullName = listOfAlphabeticalFullNames[i].split(" ");
+            // "Kalijah" ["K","A","L","I"] 
+            // "Kalijah"
+        var firstName = fullName[0];
+            // "Jones"
+        var lastName = fullName[1];
+        
+        var li = "<li>";
+            li = li + "<div class='firstName'>" + firstName + "</div>";
+            li = li + "<div class='lastName'>" + lastName + "</div>";
+            li = li + "</li>";
+        console.log('li - ', li)
+        html = html + li
+    }
+
+        html = html + "</ol>";
+        var holder = document.getElementById('nameHolder');
+        holder.innerHTML = html    
+    </script>
+    <style>
+        .lastName {
+            font-weight: bold;
+            color: red;
+        }    
+    </style>
+</body>
+</html>
+for(var i = 0; i <= listOfNames.length; i + 1){
+	consolee.log(i);
+	console.log
+}
+ console.log("I am here";, listOfNames);
+</script>
+

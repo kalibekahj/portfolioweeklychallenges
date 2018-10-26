@@ -1,0 +1,153 @@
+<!--VERY HARD: Using what you know about the box model and positioning, build out what you see in the image provided.
+The background color is #777.
+Add whatever text you want instead of the placeholders.
+Add an image for the “large box”.
+Make sure the masthead sticks to the top of the page when you scroll down.
+Be creative!-->
+
+<!DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="box.css">
+<style>
+body {
+    padding: 20 20 0 10;
+    margin: 150;
+    outline-style: solid;
+    outline-color: black;
+}
+div.grid {
+    padding: 10 10 20 10;
+    margin: 15;
+}
+div.row {
+    padding: 0 60 0 0;
+    display: flex;
+}
+div.row2 {
+    padding: 0 30 0 30;
+    display: flex;
+    margin: 50;
+}
+div.column {
+    float: right;
+    width: 100%;
+    padding: 0 0 0 350;
+}
+div.column2 {
+    width: 33.33%;
+    clear: both;
+}
+nav {
+    outline-style: solid;
+    margin: 70;
+    padding: 5 20 5 20;
+    background-color: #777;
+}
+li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 10 50 10 10;
+    text-align: center;
+}
+ul {
+    text-decoration: none;
+    outline-color: black;
+    text-align: right;
+}
+ol {
+    text-decoration: none;
+    outline-color: black;
+    text-align: center;
+    border-style: solid;
+    margin: 50;
+}
+p {
+    text-align: center;
+    border-style: solid;
+    padding: 100 0 100 0;
+    margin: 50;
+}
+div.largebox {
+    outline-style: solid;
+    outline-color: black;
+    text-align: center;
+    background-color: #777;
+}
+div.smallbox1, div.smallbox2{
+    padding: 40 80 40 80;
+    margin: 30;
+    outline-style: solid;
+    outline-color: black;
+    text-align: center;
+    float: right;
+    background-color: #777;
+}
+header {
+    padding: 50 50 50 50;
+    margin: 65;
+    outline-color: black;
+    text-align: center;
+    clear: both;
+    border: solid;
+    background-color: #777;
+}
+div.card1, div.card2, div.card3 {
+    padding: 100 100 100 100;
+    margin: 50;
+    outline-style: solid;
+    outline-color: black;
+    text-align: center;
+    background-color: #777;
+}
+footer {
+    text-align: left;
+    margin: 1;
+    padding: 1 50 1 5;
+}
+</style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li class="link1">Home</li>
+                <li class="link2">About</li>
+                <li class="link3">Gallery</li>
+                <li class="link4">Contact</li>
+                <li class="link5">Support</li>
+            </ul>
+        </nav>
+    <div class="row2">
+        <div class="column2">
+             <div class="largebox"><img src="/Users/kalijahjonesr2h/Downloads/photos/Gold_Sequins_Background.jpg" height="200px" weight="280px"></div>
+        </div>
+        <div class="column">
+            <div class="smallbox1">ARTICLE</div>
+            <div class="smallbox2">ARTICLE</div> 
+        </div>
+        </div>
+    </div>
+        <header>STATEMENT</header>
+    <div class="grid">
+        <div class="row">
+            <div class="card1">CARD1</div>
+            <div class="card2">CARD2</div>
+            <div class="card3">CARD3</div>
+        </div>
+    </div>
+    <div class="tabs">
+        <nav>
+            <ol>
+                <li class="tab1">Tab 1</li>
+                <li class="tab2">Tab 2</li>
+                <li class="tab 3">Tab 3</li>
+                <li class="tab4">Tab 4</li>
+            </ol>
+            <p>PARAGRAPHS</p>
+        </nav>
+    </div>
+<footer> Copyright&copy;</footer>
+
+</body>
+</html>

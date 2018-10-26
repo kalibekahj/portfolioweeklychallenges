@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>AJAX - EASY</h1>
+    </header>
+    <div id="container">
+        <div id="result"></div>
+        <ul id="users"></ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            // $('#result').load('test.html', function(
+            //     responseTxt, statusTxt, xhr){
+            //     if(statusTxt == "success"){
+            //         alert("It went fine");
+            //     } else if(statusTxt == "error"){
+            //         alert("Error: "+xhr.statusText);
+            //     }
+            // });
+            
+            
+            $.get('test.html', function(data){
+                $('#result').html(data);
+            });
+        
+
+            // EASY AJAX CHALLENGE
+
+            $.getJSON('users.json', function (data) {
+                $.each(data, function (i, user) {
+                    $('ul#users').append('<li>' + user.name + " - " + user.craft + '</li>');
+                });
+            })
+        });
+    </script>
+</body>
+
+</html>

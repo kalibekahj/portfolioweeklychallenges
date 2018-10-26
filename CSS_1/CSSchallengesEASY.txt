@@ -1,0 +1,40 @@
+<!--EASY: Utilizing a table with different styles, create an image of the American flag. Use the image provided for the stars.-->
+
+<!DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stars.css">
+    <styles>
+div {
+    height: 50px;
+}
+div:nth-child(even) {
+    background-color: red;
+}
+img {
+    position: absolute;
+}
+    </styles>
+</head>
+<body>
+ <img src="/Users/kalijahjonesr2h/Downloads/photos/easy-challenge.png" alt="stars">
+
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+
+</body>
+</html>
+
+

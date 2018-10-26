@@ -1,0 +1,98 @@
+<!--MEDIUM: Create a product grid of 2 rows, totaling to a required 8 products. Each product must include a title, price, image and a short description. Have each product link back to its own page on Amazon / Walmart / Target.-->
+
+<!DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="grid.css">
+<style>
+img {
+    outline-style: solid;
+    outline-color: black;
+}
+div {
+    padding: 0 30 30 0;
+    margin: 10;
+}
+.row {
+    padding: 10 10 30 10;
+    margin: 10;
+    content: " ";
+    clear: both;
+    display: flex;
+}
+.grid {
+    padding: 10 10 20 10;
+    margin: 10;
+}
+.column {
+    float: left;
+    width: 33.33%
+}
+p {
+    font-size: 18px;
+}
+a.btn {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="grid">
+        <div class="row">    
+            <div class="column">    
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/71MHCcG6p3L._SL1500_.jpg" height="330px" width="250px">
+                <p>Phone Holder by Ailun (Amazon)</p>
+                <p>Easy to install. Fits most cellphones with a width between 56mm-105mm. Easy to get adjusted, hold, or release phone. [12-Month Warranty]</p>
+                <a class="btn" href="https://www.amazon.com/gp/product/B072KNBV21/ref=s9u_qpp_gw_i1?ie=UTF8&fpl=fresh&pd_rd_i=B072KNBV21&pd_rd_r=492e4a55-887d-11e8-868f-014aee46bae3&pd_rd_w=p6qvm&pd_rd_wg=rqXWv&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=&pf_rd_r=CBR44D8R6T5R37TH2VT4&pf_rd_t=36701&pf_rd_p=321f47e6-4a41-4f0d-a894-0c54b4c3256b&pf_rd_i=desktop">BUY $6.49</a>
+            </div>
+            <div class="column">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/61lK8SdSXXL._SL1000_.jpg" height="330px" width="250px">
+                <p>Stereo Gaming Headset G9000 by BEENGOO </p>
+                <p>For PS4, PC, Xbox One,</p>
+                <a class="btn" href="https://www.amazon.com/BENGOO-Controller-Cancelling-Headphones-Surround/dp/B01H6GUCCQ/ref=sr_1_2_sspa?ie=UTF8&qid=1531708162&sr=8-2-spons&keywords=gaming+headset&psc=1">BUY $25.99</a>
+            </div>
+            <div class="cloumn">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/718sJ5s2kVL._SL1200_.jpg" height="330px" width="250px">
+                <p>Luxury Business Gift (Gold) by AMENER</p>
+                <p>For men and women. Multi-purpose gift set</p>
+                <a class="btn" href="https://www.amazon.com/AMENER-Business-Corporate-Professional-Electronic/dp/B01M6UZTTR/ref=sr_1_5?ie=UTF8&qid=1531708484&sr=8-5&keywords=technology+gifts">BUY $61.99</a>
+            </div>   
+            <div class="column">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/61Ho1QPL1aL._SL1000_.jpg" height="330px" width="250px">
+                <p>Kindle Paperwhite E-reader</p>
+                <p>New, high resolution display. Built-in djustable light-read day and night.</p>
+                <a class="btn" href="https://www.amazon.com/Certified-Refurbished-Kindle-Paperwhite-reader/dp/B00QJEL42Y/ref=sr_1_3?ie=UTF8&qid=1531708842&sr=8-3&keywords=kindle">BUY $99.99</a>  
+            </div>        
+        </div>   
+        <div class="row">
+           <div class="column">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/61ikAJnULvL._SX679_.jpg" height="330px" width="250px">
+                <p> Echo Dot (2nd Generation)</p>
+                <p>Smart speaker with Alex (black)</p>
+                <a class="btn" href="https://www.amazon.com/Amazon-Echo-Dot-Portable-Bluetooth-Speaker-with-Alexa-Black/dp/B01DFKC2SO/ref=sr_1_1?s=amazon-devices&ie=UTF8&qid=1531709156&sr=1-1&keywords=fan">BUY $34.99</a>
+           </div> 
+           <div class="column">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/81u+uVYTlxL._SL1500_.jpg" height="330px" width="250px">
+                <p> Roku Smart LED TV 32-Inch </p>
+                <p>720 High resolution for a crisp picture.</p>
+                <a class="btn" href="https://www.amazon.com/TCL-32S305-32-Inch-Smart-Model/dp/B01MU1GBLL/ref=sr_1_2?ie=UTF8&qid=1531709140&sr=8-2&keywords=televisions+on+sale">BUY $149.99</a>
+            </div>
+            <div class="column">
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/71zfmP8lHWL._SL1500_.jpg" height="330px" width="250px">
+                <p>JETech Case for Apple</p>
+                <p>Can use on iPhone 8 and iPhone 7.</p>
+                <a class="btn" href="https://www.amazon.com/gp/product/B01KF0FJX2/ref=s9_acsd_simh_hd_bw_b2cwiMt_cr_x__w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-4&pf_rd_r=KTAB9E2ZSMPPC1WVQA16&pf_rd_t=101&pf_rd_p=22c48232-41b6-57c0-b1c9-9d328bdd2d74&pf_rd_i=2407760011">BUY $7.99</a>
+            </div>   
+            <div class="column">     
+                <img src="/Users/kalijahjonesr2h/Downloads/IMG(CSSchallenges)/711u9nUlTiL._SL1500_.jpg" height="330px" width="250px">
+                <p>3D VR Headset</p>
+                <p>Best virtual reality experience.Light and natural fit. Use for your smartphone. </p>
+                <a class="btn" href="https://www.amazon.com/Headset-Technology-Experience-Breathtaking-Smartphones/dp/B01N38EXCO/ref=sr_1_3?ie=UTF8&qid=1531709274&sr=8-3&keywords=virtual+reality+goggles">BUY $15.99</a>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

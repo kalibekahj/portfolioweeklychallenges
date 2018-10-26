@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: azure;
+  height: 70px;
+  padding: 20px;
+  border: 3px solid;
+  color: black;
+  margin: 0 25% 3% 25%;
+}
+.App-title {
+  font-size: 1.8em;
+}
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 25% 3% 25%;
+  border: 2px solid;
+  padding: 1%;
+}
+button {
+  border: 1px solid;
+  border-radius: 10%;
+  padding: 2.5% 4%;
+  font-size: 14px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.Message {
+  margin-right: 5%;
+  font-size: 20px;
+}
+.Input {
+  border: 1px solid;
+  padding: 1% 10%;
+  margin-left: 2%;
+}
+.resetBtns {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0% 20%;
+}
+.Reset {
+  border: 1px solid;
+  border-radius: 10%;
+  padding: 1.5% 2%;
+  font-size: 15px;
+  background-color: aliceblue;
+  margin-top: 2%; 
+}

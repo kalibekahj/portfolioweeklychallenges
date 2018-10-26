@@ -1,0 +1,31 @@
+#rowDiv{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#error{
+    margin-left: -13%;
+    margin-top: 5%;
+    color: red;
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 5%;
+    border: 1px solid;
+}
+
+input[type="text"]{
+    height: 40px;
+    font-size: 20px;
+}
+
+#submitWeather{
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#show{
+    margin: auto;
+    width: 60%;
+}

@@ -1,0 +1,129 @@
+<!--VERY EASY: Create one 8x8 checkerboard similar to the picture attached using a table. Bonus: use only divs to create the board.--> 
+
+<!DOCTYPE html-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="checker.css">
+    <style>
+#board {
+    width: 800px;
+    height: 800px;
+    border: 5px solid grey;
+    }
+    
+div.row div {
+    width: 100px;
+    height: 100px;
+    }
+    
+div.row div.bl { background-color: black; }
+div.row div.wh { background-color: white; }
+
+div.row div {
+    float: left;
+    }
+    
+div.row:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<div id="board">
+
+    <div class="row">
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+    </div>    
+    <div class="row">
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+    </div>
+    <div class="row">
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+    </div>    
+    <div class="row">
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+    </div>
+    <div class="row">
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+    </div>    
+        <div class="row">
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+    </div>
+        <div class="row">
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+    </div>    
+        <div class="row">
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+        <div class="bl"></div>
+        <div class="wh"></div>
+    </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
+
+
